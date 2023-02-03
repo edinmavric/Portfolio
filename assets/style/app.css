@@ -96,13 +96,14 @@ ul li button a {
     color: #8892b0;
     background-color: #112240;
     border: #112240;
-    padding: 10px 12px;
+    margin: 2px;
+    padding: 7px 12px;
     border-radius: 8px;
 }
 .icons-links {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     margin-left: 1.5%;
 }
 i {
@@ -111,16 +112,20 @@ i {
     font-size: 24px;
 }
 .mail-link {
-   display: flex;
-   flex-direction: column;
+    display: flex;
     justify-content: center;
+    align-items: end;
+    height: 66vh;
 }
 .mail-link h1 {
     color: #b1bcdb;
     font-size: medium; 
     font-family: 'Source Code Pro', monospace;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-    transform-origin: 0 0; 
 }
 .mail-link h1 a {
     color: #b1bcdb;
