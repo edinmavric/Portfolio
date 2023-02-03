@@ -6,26 +6,26 @@ body {
     width: 100%;
     min-height: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     background-color: #0a192f;
 }
-/* .bg-img {
-    background-image: url('C:\Users\hp\Portfolio\bgimg.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+.container {
+    height: 100vh;
+}
 img {
     border-radius: 50px;
 }
 header {
     display: flex;
-    justify-content: space-between;
-    margin: 15px;
+    justify-content: space-around;
 }
 ul{
     list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 ul li {
     display: inline;
@@ -44,7 +44,7 @@ ul li button {
     background-color: #0a192f;
     border-color: #64ffda;
     border-radius: 6px;
-    padding: 15px;
+    padding: 13px;
     font-family: 'Roboto Mono', monospace;
 }
 ul li button a {
@@ -69,6 +69,11 @@ ul li button a {
     float: left;
     margin: 0;
     font-size: 1.2rem;
+}
+.logo h1 {
+    font-size: 58px;
+    color: #e6f1ff;
+    font-family: 'Quicksand', sans-serif;
 }
 .parent h1 {
     color: #e6f1ff;
@@ -106,16 +111,16 @@ i {
     font-size: 24px;
 }
 .mail-link {
-    display: flex;
-    justify-content: right;
-    align-items: center;
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
 }
 .mail-link h1 {
     color: #b1bcdb;
     font-size: medium; 
     font-family: 'Source Code Pro', monospace;
     transform: rotate(90deg);
-    transform-origin: 0 0;
+    transform-origin: 0 0; 
 }
 .mail-link h1 a {
     color: #b1bcdb;
