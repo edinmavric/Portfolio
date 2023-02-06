@@ -6,55 +6,76 @@ body {
     width: 100%;
     min-height: 100%;
     overflow-x: hidden;
-    overflow-y: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     background-color: #0a192f;
 }
+/* .ball {
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    background: #64ffdb75;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 1s;
+    z-index: 1;
+  } */
 .container {
     height: 100vh;
-}
-img {
-    border-radius: 50px;
 }
 header {
     display: flex;
     justify-content: space-around;
+    position: sticky;
+    background-color: #0a192ff1;
+    /* border-bottom: 1px solid #64ffda; */
 }
-ul{
+#hide-header {
+    transition: all .4s ease!important;
+}
+header ul{
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-ul li {
+header ul li {
     display: inline;
-    padding: 15px;
+    padding: 0 15px 0 15px;
 }
-ul li a {
+header ul li a {
     color: #ccd6f6;
     text-decoration: none;
     font-family: 'Roboto Mono', monospace;
 }
-ul li span {
+header ul li a:hover {
+    color: #64ffda;
+}
+header ul li span {
     color: #64ffda;
     font-family: 'Roboto Mono', monospace;
 }
-ul li button {
+header ul li button {
     background-color: #0a192f;
     border-color: #64ffda;
     border-radius: 6px;
-    padding: 13px;
+    padding: 13px 16px;
     font-family: 'Roboto Mono', monospace;
 }
-ul li button a {
+header ul li button:hover {
+    transition: 0.5s;
+    background-color: #b0ffed20;
+}
+header ul li button a {
     font-size: larger;
     color: #64ffda;
     font-family: 'Roboto Mono', monospace;
 }
 .tree {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     height: 80vh;
 }
 .parent {
@@ -65,6 +86,7 @@ ul li button a {
     font-family: 'Roboto Mono', monospace;
 }
 .parent span {
+    font-family: 'Source Code Pro', monospace;
     color: #64ffda;
     float: left;
     margin: 0;
@@ -93,12 +115,16 @@ ul li button a {
     font-size: 2vh;
 }
 .parent a button {
-    color: #8892b0;
+    color: #64ffda;
     background-color: #112240;
-    border: #112240;
+    border: #64ffda;
     margin: 2px;
     padding: 7px 12px;
     border-radius: 8px;
+}
+.parent a button:hover {
+    transition: 0.5s;
+    background-color: #b0ffed20;
 }
 .icons-links {
     display: flex;
@@ -110,6 +136,9 @@ i {
     color: #b1bcdb;
     padding: 12px;
     font-size: 24px;
+}
+i:hover {
+    color: #64ffda;
 }
 .mail-link {
     display: flex;
@@ -130,4 +159,127 @@ i {
 .mail-link h1 a {
     color: #b1bcdb;
     text-decoration: none;
+}
+.mail-link h1 a:hover {
+    color: #64ffda;
+}
+
+.tree-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+.info {
+    width: 48%;
+}
+.info p {
+    color: #8892b0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: large;
+}
+.info h1 {
+    color: #a8b2d1;
+    font-family: 'Roboto Mono', monospace;
+}
+.info p a {
+    color: #64ffda;
+    text-decoration: none;
+}
+.info ul {
+    list-style: "→";
+    }
+.info ul li span {
+    color: #8892b0;
+    padding: 12px;
+}
+.info ul li {
+    color: #64ffda;
+    padding: 8px;
+}
+.info label {
+    text-decoration: underline #64ffda;
+}
+.my-pic img{
+    filter: blur(6px);
+    border: 1px solid #64ffda;
+    border-radius: 8px;
+}
+.my-pic img:hover {
+    transition: 0.5s;
+    filter: blur(0);
+}
+.tree-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-me-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+}
+.contact-me-page span {
+    color: #64ffda;
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+}
+.contact-me-page h1 {
+    color: #e6f1ff;
+    font-size: 9vh;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+.contact-me-page p {
+    font-size: large;
+    font-family: 'Roboto Mono', monospace;
+    color: #8892b0;
+}
+.contact-me-page button {
+    background-color: #0a192f;
+    border-color: #64ffda;
+    border-radius: 6px;
+    padding: 16px 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+.contact-me-page button:hover {
+    transition: 0.5s;
+    background-color: #b0ffed20;
+}
+.contact-me-page button a {
+    text-decoration: none;
+    color: #64ffda;
+    font-size: larger;
+}
+
+.mail-link {
+    position: fixed;
+    bottom: 260px;
+    right: 20px;
+}
+.icons-links {
+    position: fixed;
+    bottom: 200px;
+    left: 50px;
+}
+
+.credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.credits a {
+    text-decoration: none;
+    font-size: medium;
+    color: #8892b0;
 }
