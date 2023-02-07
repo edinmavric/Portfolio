@@ -17,5 +17,4 @@ let currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
-/* napravi na header da mogu ostati boje u zavisnosti od toga na kojoj si stranici
-   koristeci u arrow funkciji => if i else if (onPage = true) style.color = "#64ffda" */
+

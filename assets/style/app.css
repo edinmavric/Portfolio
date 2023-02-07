@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;
@@ -9,6 +10,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     background-color: #0a192f;
+    cursor: default;
 }
 /* .ball {
     border-radius: 25px;
@@ -28,6 +30,7 @@ header {
     display: flex;
     justify-content: space-around;
     position: sticky;
+    top: 0;
     background-color: #0a192ff1;
     /* border-bottom: 1px solid #64ffda; */
 }
@@ -76,7 +79,6 @@ header ul li button a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
 }
 .parent {
     display: flex;
@@ -205,19 +207,43 @@ i:hover {
 .info label {
     text-decoration: underline #64ffda;
 }
+.info label:hover {
+    transition: 0.3s;
+    text-decoration: none;
+    color: #64ffda;
+}
+a.left {
+    position: relative;
+}
+a.left:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #64ffda;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+}
 .my-pic img{
     filter: blur(6px);
     border: 1px solid #64ffda;
     border-radius: 8px;
 }
 .my-pic img:hover {
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
     filter: blur(0);
 }
 .tree-contact {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .contact-me-page{
     display: flex;
@@ -282,4 +308,30 @@ i:hover {
     text-decoration: none;
     font-size: medium;
     color: #8892b0;
+}
+
+
+#start {
+    height: 75vh;
+}
+#about {
+    height: 100vh;
+}
+/* #experience {
+    height: 100vh;
+}
+#work {
+    height: 100vh;
+} */
+#contact {
+    height: 100vh;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

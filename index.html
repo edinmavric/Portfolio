@@ -6,30 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/style/app.css">
+    <link rel="stylesheet" href="assets/style/animation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://kit.fontawesome.com/9d055c21e3.js" crossorigin="anonymous"></script>
     <script src="assets/scripts/app.js" defer></script>
 </head>
 <body>
-    <div class="container">
+<!--  -->
+<div class="container">
         <!-- <div id="foo" class="ball"></div> -->
         <header id="hide-header">
             <div class="logo"><h1>EM</h1></div>
         <ul>
-            <li><a href="#">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#">Experience</a></li>
             <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>  
-            <li><button><a href="#">Resume</a></button></li>          
+            <li><a href="#contact">Contact</a></li>  
+            <li><button><a href="#" target="_blank">Resume</a></button></li>          
         </ul>
     </header>
-    
-    <div class="tree">
+<!--  -->
+    <div id="start" class="tree">
         <div class="icons-links">
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://github.com/edinmavric" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/mavric.edin/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100009926763757" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
         </div>
         <div class="parent">
             <span>Hi, my name is</span>
@@ -41,42 +43,50 @@
             <br><button>About me</button>, <button>Contact me</button>, or send me a email at <button>edinmavric10@gmail.com</button>.</a>
         </div>
         <div class="mail-link">
-            <h1><a href="#">edinmavric10@gmail.com<hr></a></h1>
+            <h1><a class="left" href="mailto:edinmavric10@gmail.com" target="_blank">edinmavric10@gmail.com<hr></a></h1>
         </div>
 </div>
-<br><br><br>
-<div class="tree-about">
+<!--  -->
+<div id="about" class="tag tree-about">
     <div class="about-me">
         <div class="info">
             <h1>About me <hr></h1>
             <p>Hello! My name is Edin and I enjoy creating things that live on
-            the internet. My interest in Coding started when i was in 
-            middle school when I got in <a href="#">IT class</a>. I started my Coding journey
-            with <a href="#">Python</a>, <a href="#">C</a>, <a href="#">C++</a>, <a href="#">C#</a>.</p>
+                the internet. My interest in Coding started when i was in 
+            middle school when I got in <a class="left">IT class</a>. I started my Coding journey
+            with <a class="left">Python</a>, <a class="left">C</a>, <a class="left">C++</a>, <a class="left">C#</a>.</p>
             
-            <p>Fast-forward to today, I started taking live courses in <a href="#">Centar Nit</a>
-            and online <a href="#">Udemy</a> courses for HTML, CSS, Javascript and soon React.
-            I currently want to strenghten and upgrade my <a href="#">Frontend developing</a> skills 
-            and soon to start making bigger steps in <a href="#">Backend developing</a> programming 
+            <p>Fast-forward to today, I started taking live courses in <a class="left" href="https://centarnit.com/" target="_blank">Centar Nit</a>
+                and online <a class="left" href="https://www.udemy.com/" target="_blank">Udemy</a> courses for HTML, CSS, Javascript and soon React.
+            I currently want to strenghten and upgrade my <a class="left">Frontend developing</a> skills 
+            and soon to start making bigger steps in <a class="left">Backend developing</a> programming 
             languages. 
-            </p>
-
-            <p>I enjoy making <label>functional</label> and <label>practical</label> websites, from small business sites to rich 
+        </p>
+        
+        <p>I enjoy making <label>functional</label> and <label>practical</label> websites, from small business sites to rich 
             interactive web pages. With every line of code i strive to make the web a beautiful place.
-            </p>
-
-            <p>Here are a few technologies I've been working with recently:</p>
-            <ul>
-                <li><span>JavaScript (ES6+)</span></li>
-                <li><span>HTML & CSS</span></li>
-                <li><span>C#</span></li>
-            </ul>
-        </div>
-        <div class="my-pic"><img src="C:\Users\hp\Portfolio\IMG_2330.jpg" height="330" width="280"></div>
-    </div>    
+        </p>
+        
+        <p>Here are a few technologies I've been working with recently:</p>
+        <ul>
+            <li><span>JavaScript (ES6+)</span></li>
+            <li><span>HTML & CSS</span></li>
+            <li><span>C#</span></li>
+        </ul>
+    </div>
+    <div class="my-pic"><img src="C:\Users\hp\Portfolio\IMG_2330.jpg" height="330" width="280"></div>
+</div>    
 </div>
-<br><br><br><br><br><br><br>
-<div class="tree-contact">
+<!--  -->
+<!-- <div id="experience" class="tag tree-experience">
+
+</div> -->
+<!--  -->
+<!-- <div id="work" class="tag tree-work">
+
+</div> -->
+<!--  -->
+<div id="contact" class="tag tree-contact">
     <div class="contact-me-page">
         <span>What's Next?</span>
         <br>
@@ -87,15 +97,14 @@
         just want to say hi, I'll try my best to get back to you!
         </p>
         <br><br>
-        <button><a href="#">Say Hello!</a></button>
+        <button><a href="mailto:edinmavric10@gmail.com" target="_blank">Say Hello!</a></button>
     </div>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="credits">
-    <a href="github">Desinged and Built by Edin Mavric.</a>
-    
+    <a href="https://github.com/edinmavric" target="_blank">Desinged and Built by Edin Mavric.</a>
 </div>
 </div>
+<!--  -->
 </body>
 </html>
 <!-- <img src="C:\Users\hp\Portfolio\gbcolor.jpg" width="70" height="70"> -->
