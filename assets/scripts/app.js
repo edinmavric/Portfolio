@@ -7,7 +7,7 @@
 
 let prevScrollpos = window.pageYOffset;
 
-window.onscroll = function() {
+window.onscroll = headerMove = () => {
 let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("hide-header").style.top = "0";
@@ -17,4 +17,4 @@ let currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
-
+window.onpagehide
