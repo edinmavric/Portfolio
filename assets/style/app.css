@@ -30,6 +30,7 @@ header {
     top: 0;
     height: 90px;
     background-color: #0a192f;
+    box-shadow: 2px 1px 5px #000;
     z-index: 1;
     /* border-bottom: 1px solid #64ffda; */
 }
