@@ -27,3 +27,8 @@ for (let i = 0; i < btns.length; i++) {
   });
 }
 
+const preloader = document.querySelector('.preloader');
+
+window.addEventListener('load', function() {
+  preloader.classList.add("hide-preloader");
+})
