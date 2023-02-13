@@ -1,22 +1,22 @@
 let prevScrollpos = window.pageYOffset;
 
 window.onscroll = headerMove = () => {
-let currentScrollPos = window.pageYOffset;
+  let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("hide-header").style.top = "0";
   } else {
     document.getElementById("hide-header").style.top = "-90px";
   }
   prevScrollpos = currentScrollPos;
-}
+};
 
-window.onpagehide
+window.onpagehide;
 
-let navContainer = document.getElementById('navMenus');
+let navContainer = document.getElementById("navMenus");
 let btns = navContainer.getElementsByClassName("btns");
 
 for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
+  btns[i].addEventListener("click", function () {
     let current = document.getElementsByClassName("active");
 
     if (current.length > 0) {
@@ -27,8 +27,9 @@ for (let i = 0; i < btns.length; i++) {
   });
 }
 
-const preloader = document.querySelector('.preloader');
+const preloader = document.querySelector(".preloader");
 
-window.addEventListener('load', function() {
+window.addEventListener("load", function () {
   preloader.classList.add("hide-preloader");
-})
+});
+
