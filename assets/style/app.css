@@ -319,9 +319,12 @@ a.left:hover:before {
   color: #a8b2d1;
   font-family: "Roboto Mono", monospace;
 }
+.cards a {
+  text-decoration: none;
+}
 .cards {
   width: 21%;
-  height: 37vh;
+  height: 38vh;
   display: flex;
   flex-direction: column;
   background-color: #112240;
@@ -329,12 +332,12 @@ a.left:hover:before {
   padding: 30px;
   border-radius: 6px;
   cursor: pointer;
-  transition: transform .2s
+  transition: transform 0.2s;
 }
 .cards:hover {
   transform: scale(1.05);
 }
-.cards:hover h2{
+.cards:hover h2 {
   color: #64ffda;
 }
 .card-icons .fa-github:hover {
@@ -363,7 +366,7 @@ a.left:hover:before {
   margin: 6px;
 }
 .cards ul {
-  text-decoration: none;
+  list-style: none;
   text-align: left;
 }
 .cards li {
