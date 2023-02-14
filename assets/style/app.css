@@ -12,6 +12,7 @@ body {
   background-color: #0a192f;
   cursor: default;
 }
+
 .active {
   color: #64ffda;
 }
@@ -67,6 +68,8 @@ body {
     transition: transform 1s;
     z-index: 1;
   } */
+
+/* header */
 header {
   display: flex;
   justify-content: space-around;
@@ -119,6 +122,8 @@ header ul li button a {
   color: #64ffda;
   font-family: "Roboto Mono", monospace;
 }
+
+/* home */
 .tree {
   display: flex;
   justify-content: center;
@@ -183,7 +188,7 @@ header ul li button a {
   justify-content: center;
   margin-left: 1.5%;
 }
-.icons-links i {
+i {
   color: #b1bcdb;
   padding: 12px;
   font-size: 24px;
@@ -215,6 +220,7 @@ i:hover {
   color: #64ffda;
 }
 
+/* about */
 .tree-about {
   display: flex;
   justify-content: center;
@@ -289,93 +295,84 @@ a.left:hover:before {
   transition: 0.5s ease-in-out;
   filter: blur(0);
 }
-.width-of-widths {
+
+/* work */
+.work-card-containter-width {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.container-width {
-  width: 69%;
-  height: 100%;
-}
-.container-work {
+.work-card-container {
+  width: 82%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
-.card {
-  width: 32vh;
-  background-color: #112240;
-  color: white;
-  padding: 40px;
-  cursor: pointer;
-  height: 32vh;
-  margin: 12px;
-  text-align: left;
-  border-radius: 10px;
-}
-/* .card:hover h3{
-} */
-.card h3 {
-  font-size: x-large;
-  font-family: "Roboto Mono", monospace;
-}
-.card span {
-  color: #8892b0;
-  font-family: "Roboto Mono", monospace;
-}
-.card ul {
-  list-style: none;
-  padding: 30px 0 0 0;
-}
-.card ul li {
-  display: inline;
-  padding: 15px;
-  color: #8892b0c9;
-  font-size: smaller;
-}
-.icons-projects {
+.work-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
 }
-.fa-folder {
-  font-size: 4vh;
-  color: #64ffda;
-}
-.card .fa-github {
-  font-size: 3vh;
-}
-.h1-projects h1 {
+.work-info h1 {
   color: #a8b2d1;
   font-family: "Roboto Mono", monospace;
 }
-
-/* .tree-work {
+.cards {
+  width: 21%;
+  height: 37vh;
   display: flex;
-  justify-content: center;
-  color: white;
-}
-
-.icons-projects {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-}
-.git-project {
-  display: flex;
-  justify-content: center;
   flex-direction: column;
-  border: 1px solid #64ffda;
-  padding: 15ox;
+  background-color: #112240;
+  margin: 9px;
+  padding: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform .2s
 }
-.git-project ul {
-  list-style: none;
+.cards:hover {
+  transform: scale(1.05);
 }
-.git-project ul li {
+.cards:hover h2{
+  color: #64ffda;
+}
+.card-icons .fa-github:hover {
+  color: #64ffda;
+}
+.card-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-icons .fa-folder {
+  font-size: 5vh;
+  color: #64ffda;
+}
+.card-icons .fa-github {
+  font-size: 3vh;
+  color: #b1bcdb;
+}
+.cards h2 {
+  font-family: "Roboto Mono", monospace;
+  color: #e6f1ff;
+}
+.cards span {
+  font-family: "Roboto Mono", monospace;
+  color: #b1bcdb;
+  margin: 6px;
+}
+.cards ul {
+  text-decoration: none;
+  text-align: left;
+}
+.cards li {
   display: inline;
   padding: 5px;
-} */
+  color: #8892b0;
+}
+
+/* contact */
 .tree-contact {
   display: flex;
   justify-content: center;
@@ -423,6 +420,7 @@ a.left:hover:before {
   font-size: larger;
 }
 
+/* left and right */
 .mail-link {
   position: fixed;
   bottom: 260px;
@@ -434,6 +432,7 @@ a.left:hover:before {
   left: 50px;
 }
 
+/* bottom credits for site maker */
 .credits {
   display: flex;
   justify-content: center;
@@ -447,28 +446,17 @@ a.left:hover:before {
   color: #8892b0;
 }
 
+/* header id's */
 #start {
   height: 88vh;
 }
 #about {
   height: 100vh;
 }
-/* #experience {
-    height: 100vh;
-}
+/*
 #work {
     height: 100vh;
 } */
 #contact {
   height: 100vh;
 }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
- 
