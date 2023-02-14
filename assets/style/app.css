@@ -464,3 +464,15 @@ a.left:hover:before {
 #contact {
   height: 100vh;
 }
+
+/* animations */
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
