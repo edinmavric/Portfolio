@@ -368,6 +368,7 @@ a.left:hover:before {
 .cards ul {
   list-style: none;
   text-align: left;
+  padding-top: 30px;
 }
 .cards li {
   display: inline;
