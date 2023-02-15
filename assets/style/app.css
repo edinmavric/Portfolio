@@ -466,13 +466,21 @@ a.left:hover:before {
 }
 
 /* animations */
-.reveal{
+.reveal {
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(130px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 1.5s all ease;
 }
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+audio::-webkit-media-controls-timeline,
+video::-webkit-media-controls-timeline {
+  display: none;
+}
+audio::-webkit-media-controls,
+video::-webkit-media-controls {
+  display: none;
 }

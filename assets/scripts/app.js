@@ -1,3 +1,5 @@
+// Hiding header and following through the whole page with CSS help of sticky
+
 let prevScrollpos = window.pageYOffset;
 
 window.onscroll = headerMove = () => {
@@ -11,6 +13,8 @@ window.onscroll = headerMove = () => {
 };
 
 window.onpagehide;
+
+// Header active class on pressed header component
 
 let navContainer = document.getElementById("navMenus");
 let btns = navContainer.getElementsByClassName("btns");
@@ -27,11 +31,15 @@ for (let i = 0; i < btns.length; i++) {
   });
 }
 
+// Preloader logic settings
+
 const preloader = document.querySelector(".preloader");
 
 window.addEventListener("load", function () {
   preloader.classList.add("hide-preloader");
 });
+
+// Reveal site sections on scroll
 
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
