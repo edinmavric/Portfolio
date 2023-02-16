@@ -231,6 +231,9 @@ i:hover {
   justify-content: space-around;
   align-items: center;
   width: 80%;
+  /* background-color: #112240;
+    padding: 20px;
+    border-radius: 20px; */
 }
 .info {
   width: 48%;
@@ -271,7 +274,7 @@ i:hover {
 a.left {
   position: relative;
 }
-a.left:before {
+a.left::after {
   content: "";
   position: absolute;
   width: 0;
@@ -282,7 +285,7 @@ a.left:before {
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
-a.left:hover:before {
+a.left:hover::after {
   visibility: visible;
   width: 100%;
 }
@@ -290,9 +293,10 @@ a.left:hover:before {
   filter: blur(6px);
   border: 1px solid #64ffda;
   border-radius: 8px;
+  transition: 1s ease-in-out;
 }
 .my-pic img:hover {
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
   filter: blur(0);
 }
 
@@ -454,9 +458,9 @@ a.left:hover:before {
 #start {
   height: 88vh;
 }
-#about {
+/* #about {
   height: 100vh;
-}
+} */
 /*
 #work {
     height: 100vh;

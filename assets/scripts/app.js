@@ -27,6 +27,12 @@ for (let i = 0; i < btns.length; i++) {
       current[0].className = current[0].className.replace(" active", "");
     }
 
+    btns[i].addEventListener("click", function () {
+      setTimeout(function () {
+        document.getElementById("hide-header").style.top = "-90px";
+      }, 800);
+    });
+
     this.className += " active";
   });
 }
@@ -55,3 +61,14 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 reveal();
+
+// Hide fixed mail link when on About me page
+
+// const hideMail = () => {
+//   let mailLink = document.querySelector('.mail-link');
+
+// }
+
+// setTimeout(function () {
+//     document.getElementById("hide-header").style.top = "-90px"
+// }, 1000)
