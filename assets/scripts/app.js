@@ -23,15 +23,15 @@ for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
     let current = document.getElementsByClassName("active");
 
-    if (current.length > 0) {
-      current[0].className = current[0].className.replace(" active", "");
-    }
-
     btns[i].addEventListener("click", function () {
       setTimeout(function () {
         document.getElementById("hide-header").style.top = "-90px";
       }, 800);
     });
+
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
 
     this.className += " active";
   });
@@ -52,7 +52,7 @@ function reveal() {
   for (let i = 0; i < reveals.length; i++) {
     let windowHeight = window.innerHeight;
     let elementTop = reveals[i].getBoundingClientRect().top;
-    let elementVisible = 150;
+    let elementVisible = 130;
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
     }
@@ -62,13 +62,7 @@ window.addEventListener("scroll", reveal);
 
 reveal();
 
-// Hide fixed mail link when on About me page
+// Reveal About me image
 
-// const hideMail = () => {
-//   let mailLink = document.querySelector('.mail-link');
+let myPic = document.querySelector(".reveal-my-pic");
 
-// }
-
-// setTimeout(function () {
-//     document.getElementById("hide-header").style.top = "-90px"
-// }, 1000)

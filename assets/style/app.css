@@ -374,7 +374,7 @@ a.left:hover::after {
   text-align: left;
   padding-top: 30px;
 }
-.cards li {
+.cards ul li {
   display: inline;
   padding: 5px;
   color: #8892b0;
@@ -453,13 +453,16 @@ a.left:hover::after {
   font-size: medium;
   color: #8892b0;
 }
+footer {
+    display: none;
+}
 
 /* header id's */
 #start {
   height: 88vh;
 }
 /* #about {
-  height: 100vh;
+  max-height: 100vh;
 } */
 /*
 #work {
@@ -480,6 +483,16 @@ a.left:hover::after {
   transform: translateY(0);
   opacity: 1;
 }
+/* .reveal-my-pic {
+  position: relative;
+  transition: 2.2s ease-in-out;
+  filter: blur(6px);
+}
+.reveal-my-pic.active {
+  transition: 0.2s ease-in-out;
+  filter: blur(0);
+} */
+
 audio::-webkit-media-controls-timeline,
 video::-webkit-media-controls-timeline {
   display: none;
@@ -487,4 +500,48 @@ video::-webkit-media-controls-timeline {
 audio::-webkit-media-controls,
 video::-webkit-media-controls {
   display: none;
+}
+
+/* Media queries */
+/* 1150px */
+@media all and (max-width: 1330px) {
+  .cards ul li {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1137px) {
+  .icons-links, .mail-link {
+    display: none;
+  }
+  .icons-links-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .credits {
+    display: none;
+  }
+  .credits-footer a {
+    text-decoration: none;
+    font-size: medium;
+    color: #8892b0;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20vh;
+    background-color: #051734;
+  }
+}
+
+@media all and (max-width: 819px) {
+  
+  /* about me text over picture and cards re-do */
+}
+
+@media all and (max-width: 616px) {
+  /* header dropdown menu */
 }
