@@ -65,4 +65,3 @@ reveal();
 // Reveal About me image
 
 let myPic = document.querySelector(".reveal-my-pic");
-
