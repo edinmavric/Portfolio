@@ -68,15 +68,15 @@ let myPic = document.querySelector(".reveal-my-pic");
 
 //
 
-let showBtn = document.getElementById('showMLBtn');
-let invisibleCards = document.querySelector('.invisCards');
+let showBtn = document.getElementById("showMLBtn");
+let invisibleCards = document.querySelector(".invisCards");
 
-showBtn.addEventListener('click', () => {
-  if (invisibleCards.className === 'invisCards invisible') {
-    invisibleCards.className = 'invisCards visible';
-    showBtn.innerHTML = "Show Less..."
+showBtn.addEventListener("click", () => {
+  if (invisibleCards.className === "invisCards invisible") {
+    invisibleCards.className = "invisCards visible";
+    showBtn.innerHTML = "Show Less...";
   } else {
-    invisibleCards.className = 'invisCards invisible';
-    showBtn.innerHTML = "Show More..."
+    invisibleCards.className = "invisCards invisible";
+    showBtn.innerHTML = "Show More...";
   }
 });

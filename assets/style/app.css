@@ -176,12 +176,8 @@ header ul li button a {
   background-color: #112240;
   border: #64ffda;
   margin: 2px;
-  padding: 7px 12px;
-  border-radius: 8px;
-}
-.parent a button:hover {
-  transition: 0.5s;
-  background-color: #b0ffed20;
+  padding: 3px 7px;
+  border-radius: 6px;
 }
 .icons-links {
   display: flex;
@@ -399,6 +395,7 @@ a.left:hover::after {
 .visible {
   display: flex;
   flex-wrap: wrap;
+  transition: 0.3s ease-out forwards;
 }
 #showMLBtn {
   margin-top: 60px;
