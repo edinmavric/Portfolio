@@ -288,14 +288,27 @@ a.left:hover::after {
   width: 100%;
 }
 .my-pic img {
-  filter: blur(6px);
   border: 1px solid #64ffda;
   border-radius: 8px;
-  transition: 0.4s ease-in-out;
+  height: 330px;
+  width: 280px;
+  animation: myAnim 4s ease-in-out 1s 1 normal forwards;
 }
-.my-pic img:hover {
-  transition: 0.3s ease-in-out;
-  filter: blur(0);
+@keyframes myAnim {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.1);
+  }
+
+  80% {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* work */

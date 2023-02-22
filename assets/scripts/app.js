@@ -1,7 +1,7 @@
 // Hiding header and following through the whole page with CSS help of sticky
 
 let prevScrollpos = window.pageYOffset;
-let hideHeader = document.getElementById("hide-header")
+let hideHeader = document.getElementById("hide-header");
 
 window.onscroll = headerMove = () => {
   let currentScrollPos = window.pageYOffset;
@@ -20,32 +20,33 @@ window.onpagehide;
 let navContainer = document.getElementById("navMenus");
 let btns = navContainer.getElementsByClassName("btns");
 
+// const headerFunction = () => { hideHeader.style.top = "-90px" }
+
 for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    setTimeout(function () {
+  btns[i].addEventListener("click", () => {
+    setTimeout(() => {
       hideHeader.style.top = "-90px";
     }, 800);
   });
-  
+
   for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    let current = document.getElementsByClassName("active");
-    
+    btns[i].addEventListener("click", () => {
+      let current = document.getElementsByClassName("active");
 
-    if (current.length > 0) {
-      current[0].className = current[0].className.replace(" active", "");
-    }
+      if (current.length > 0) {
+        current[0].className = current[0].className.replace(" active", "");
+      }
 
-    this.className += " active";
-  });
-}
+      this.className += " active";
+    });
+  }
 }
 
 // Preloader logic settings
 
 const preloader = document.querySelector(".preloader");
 
-window.addEventListener("load", function () {
+window.addEventListener("load", () => {
   preloader.classList.add("hide-preloader");
 });
 
@@ -57,6 +58,7 @@ function reveal() {
     let windowHeight = window.innerHeight;
     let elementTop = reveals[i].getBoundingClientRect().top;
     let elementVisible = 130;
+
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
     }
