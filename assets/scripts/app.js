@@ -1,13 +1,14 @@
 // Hiding header and following through the whole page with CSS help of sticky
 
 let prevScrollpos = window.pageYOffset;
+let hideHeader = document.getElementById("hide-header")
 
 window.onscroll = headerMove = () => {
   let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("hide-header").style.top = "0";
+    hideHeader.style.top = "0";
   } else {
-    document.getElementById("hide-header").style.top = "-90px";
+    hideHeader.style.top = "-90px";
   }
   prevScrollpos = currentScrollPos;
 };
@@ -21,13 +22,15 @@ let btns = navContainer.getElementsByClassName("btns");
 
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
+    setTimeout(function () {
+      hideHeader.style.top = "-90px";
+    }, 800);
+  });
+  
+  for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
     let current = document.getElementsByClassName("active");
-
-    btns[i].addEventListener("click", function () {
-      setTimeout(function () {
-        document.getElementById("hide-header").style.top = "-90px";
-      }, 800);
-    });
+    
 
     if (current.length > 0) {
       current[0].className = current[0].className.replace(" active", "");
@@ -35,6 +38,7 @@ for (let i = 0; i < btns.length; i++) {
 
     this.className += " active";
   });
+}
 }
 
 // Preloader logic settings
