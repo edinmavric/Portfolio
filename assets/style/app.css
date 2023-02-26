@@ -68,6 +68,30 @@ body {
   } */
 
 /* header */
+/* #sidebar {
+  width: 0;
+  height: 100%;
+  display: none;
+}
+#sidebar a {
+  text-decoration: none;
+  font-size: 2rem;
+  /* color: white; 
+  display: block;
+  transition: 1s;
+}
+.sidebar-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.sidebar-open-btn {
+  display: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+} */
 header {
   display: flex;
   justify-content: space-around;
@@ -82,7 +106,7 @@ header {
 #hide-header {
   transition: all 0.4s ease !important;
 }
-header ul {
+#navMenus ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -616,7 +640,9 @@ video::-webkit-media-controls {
   #cardNo3 {
     display: none;
   }
-  
+  #sidebar {
+    display: block;
+  }
 }
 
 @media all and (max-width: 627px) {
