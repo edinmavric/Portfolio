@@ -92,19 +92,44 @@ showBtn.addEventListener("click", () => {
 // Header responsive
 
 let sidebarShowBtn = document.querySelector(".sidebar-open-btn");
-let closeButton = document.getElementsByClassName("close")[0]
+let closeButton = document.getElementsByClassName("close")[0];
 let sidebar = document.getElementById("myModal");
+let btnsside = document.querySelectorAll(".btnsside");
 
-sidebarShowBtn.onclick = function() {
+for (let i = 0; i < btnsside.length; i++) {
+  btnsside[i].addEventListener("click", () => {
+    setTimeout(() => {
+      sidebar.style.display = "none";
+    }, 0);
+  });
+
+  for (let i = 0; i < btnsside.length; i++) {
+    btnsside[i].addEventListener("click", () => {
+      let current = document.getElementsByClassName("active");
+
+      if (current.length > 0) {
+        current[0].className = current[0].className.replace(" active", "");
+      }
+
+      this.className += " active";
+    });
+  }
+}
+
+// btnsside.onclick = function () {
+//   sidebar.style.display = "none";
+// };
+
+sidebarShowBtn.onclick = function () {
   sidebar.style.display = "block";
-}
+};
 
-closeButton.onclick = function() {
+closeButton.onclick = function () {
   sidebar.style.display = "none";
-}
+};
 
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == sidebar) {
     sidebar.style.display = "none";
   }
-}
+};
