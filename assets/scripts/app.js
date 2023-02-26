@@ -100,18 +100,6 @@ for (let i = 0; i < btnsside.length; i++) {
 
   for (let i = 0; i < btnsside.length; i++) {
     btnsside[i].addEventListener("click", () => {
-      let current = document.getElementsByClassName("active");
-
-      if (current.length > 0) {
-        current[0].className = current[0].className.replace(" active", "");
-      }
-
-      this.className += " active";
-    });
-  }
-
-  for (let i = 0; i < btnsside.length; i++) {
-    btnsside[i].addEventListener("click", () => {
       sidebar.style.display = "none";
     });
   }
