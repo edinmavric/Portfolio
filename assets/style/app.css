@@ -88,17 +88,11 @@ body {
   font-family: "Roboto Mono", monospace;
   padding: 28px;
 }
-.modal-content button {
+.modalbtn {
   background-color: #051734;
-  border-color: #64ffda;
-  border-radius: 6px;
-  padding: 18px 60px;
+  color: #64ffda;
   font-family: "Roboto Mono", monospace;
   font-size: 38px;
-  margin-top: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .modal-content button:hover {
   transition: 0.5s;
@@ -753,6 +747,10 @@ video::-webkit-media-controls {
   }
   #showMLBtn {
     display: none;
+  }
+  .modal-content a {
+    font-size: 21px;
+    width: 40vw;
   }
   /*home page re-do */
 }
