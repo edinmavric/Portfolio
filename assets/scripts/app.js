@@ -1,3 +1,5 @@
+let body = document.body;
+
 // Hiding header and following through the whole page with CSS help of sticky
 
 let prevScrollpos = window.pageYOffset;
@@ -48,6 +50,7 @@ const preloader = document.querySelector(".preloader");
 
 window.addEventListener("load", () => {
   preloader.classList.add("hide-preloader");
+  body.classList.remove("invisible");
 });
 
 // Reveal site sections on scroll
@@ -71,7 +74,7 @@ reveal();
 
 let myPic = document.querySelector(".reveal-my-pic");
 
-//
+// Show More and Show Less button on cards
 
 let showBtn = document.getElementById("showMLBtn");
 let invisibleCards = document.querySelector(".invisCards");
@@ -85,3 +88,23 @@ showBtn.addEventListener("click", () => {
     showBtn.innerHTML = "Show More...";
   }
 });
+
+// Header responsive
+
+let sidebarShowBtn = document.querySelector(".sidebar-open-btn");
+let closeButton = document.getElementsByClassName("close")[0]
+let sidebar = document.getElementById("myModal");
+
+sidebarShowBtn.onclick = function() {
+  sidebar.style.display = "block";
+}
+
+closeButton.onclick = function() {
+  sidebar.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == sidebar) {
+    sidebar.style.display = "none";
+  }
+}

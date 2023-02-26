@@ -14,7 +14,7 @@
     ></script>
     <script src="assets/scripts/app.js" defer></script>
   </head>
-  <body>
+  <body class="invisible">
     <!--  -->
     <div class="container">
       <div class="preloader">
@@ -32,16 +32,18 @@
           </li>
         </ul>
 
-        <!-- <button class="sidebar-open-btn">&#9776;</button>
-
-        <ul id="sidebar">
-          <li><a class="sidebar-close-btn">&times;</a></li>
-          <li><a class="sidebar-btns" href="#about">About</a></li>
-          <li><a class="sidebar-btns" href="#work">Work</a></li>
-          <li><a class="sidebar-btns" href="#contact">Contact</a></li>
-          <li><button><a href="#" target="_blank">Resume</a></button></li>
-        </ul> -->
+        <button class="sidebar-open-btn">&#9776;</button>
       </header>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
       <div id="start" class="tree">
         <div class="icons-links">
           <a href="https://github.com/edinmavric" target="_blank"
