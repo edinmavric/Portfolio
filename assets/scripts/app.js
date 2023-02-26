@@ -99,8 +99,9 @@ let btnsside = document.querySelectorAll(".btnsside");
 for (let i = 0; i < btnsside.length; i++) {
   btnsside[i].addEventListener("click", () => {
     setTimeout(() => {
-      sidebar.style.display = "none";
-    }, 0);
+      console.log('headerHide');
+      hideHeader.style.top = "-90px";
+    }, 800);
   });
 
   for (let i = 0; i < btnsside.length; i++) {
@@ -112,6 +113,12 @@ for (let i = 0; i < btnsside.length; i++) {
       }
 
       this.className += " active";
+    });
+  }
+
+  for (let i = 0; i < btnsside.length; i++) {
+    btnsside[i].addEventListener("click", () => {
+        sidebar.style.display = "none";
     });
   }
 }
@@ -132,4 +139,4 @@ window.onclick = function (event) {
   if (event.target == sidebar) {
     sidebar.style.display = "none";
   }
-};
+}
