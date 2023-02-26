@@ -82,7 +82,7 @@ body {
   height: 100%;
   font-size: 38px;
 }
-.btnsside{
+.btnsside {
   color: #ccd6f6;
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
@@ -293,9 +293,6 @@ i:hover {
   justify-content: space-around;
   align-items: center;
   width: 80%;
-  /* background-color: #112240;
-    padding: 20px;
-    border-radius: 20px; */
 }
 .info {
   width: 48%;
@@ -357,20 +354,6 @@ a.left:hover::after {
   height: 330px;
   width: 280px;
   animation: myAnim 4s ease-in-out 1s 1 normal forwards;
-}
-@keyframes myAnim {
-  0% {
-    opacity: 0.3;
-    transform: scale(0.1);
-  }
-  80% {
-    opacity: 0.5;
-    transform: scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
 
 /* work */
@@ -570,13 +553,6 @@ footer {
 #start {
   height: 88vh;
 }
-/* #about {
-  max-height: 100vh;
-} */
-/*
-#work {
-    height: 100vh;
-} */
 #contact {
   height: 100vh;
 }
@@ -592,15 +568,6 @@ footer {
   transform: translateY(0);
   opacity: 1;
 }
-/* .reveal-my-pic {
-  position: relative;
-  transition: 2.2s ease-in-out;
-  filter: blur(6px);
-}
-.reveal-my-pic.active {
-  transition: 0.2s ease-in-out;
-  filter: blur(0);
-} */
 
 audio::-webkit-media-controls-timeline,
 video::-webkit-media-controls-timeline {
@@ -610,9 +577,22 @@ audio::-webkit-media-controls,
 video::-webkit-media-controls {
   display: none;
 }
+@keyframes myAnim {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.1);
+  }
+  80% {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
-/* Media queries */
-/* 1150px */
+/* Media queries for better responsivity */
 @media all and (max-width: 1330px) {
   .cards ul li {
     display: none;
@@ -661,7 +641,6 @@ video::-webkit-media-controls {
   .my-pic {
     margin: 40px;
   }
-  /* about me text over picture and cards re-do */
   .cards {
     width: 30%;
     height: 26vh;
@@ -694,8 +673,8 @@ video::-webkit-media-controls {
     margin-right: 30px;
   }
   .logo {
-  margin-left: 30px;
-}
+    margin-left: 30px;
+  }
 }
 
 @media all and (max-width: 627px) {
@@ -775,6 +754,5 @@ video::-webkit-media-controls {
   #showMLBtn {
     display: none;
   }
-  /* header dropdown menu and home page re-do */
-  /* header dropdown menu below > */
+  /*home page re-do */
 }

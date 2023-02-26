@@ -22,8 +22,6 @@ window.onpagehide;
 let navContainer = document.getElementById("navMenus");
 let btns = navContainer.getElementsByClassName("btns");
 
-// const headerFunction = () => { hideHeader.style.top = "-90px" }
-
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", () => {
     setTimeout(() => {
@@ -70,10 +68,6 @@ window.addEventListener("scroll", reveal);
 
 reveal();
 
-// Reveal About me image
-
-let myPic = document.querySelector(".reveal-my-pic");
-
 // Show More and Show Less button on cards
 
 let showBtn = document.getElementById("showMLBtn");
@@ -99,7 +93,7 @@ let btnsside = document.querySelectorAll(".btnsside");
 for (let i = 0; i < btnsside.length; i++) {
   btnsside[i].addEventListener("click", () => {
     setTimeout(() => {
-      console.log('headerHide');
+      console.log("headerHide");
       hideHeader.style.top = "-90px";
     }, 800);
   });
@@ -118,14 +112,10 @@ for (let i = 0; i < btnsside.length; i++) {
 
   for (let i = 0; i < btnsside.length; i++) {
     btnsside[i].addEventListener("click", () => {
-        sidebar.style.display = "none";
+      sidebar.style.display = "none";
     });
   }
 }
-
-// btnsside.onclick = function () {
-//   sidebar.style.display = "none";
-// };
 
 sidebarShowBtn.onclick = function () {
   sidebar.style.display = "block";
@@ -139,4 +129,4 @@ window.onclick = function (event) {
   if (event.target == sidebar) {
     sidebar.style.display = "none";
   }
-}
+};
