@@ -118,3 +118,11 @@ window.onclick = function (event) {
     sidebar.style.display = "none";
   }
 };
+
+// Non scroll sidebar
+
+// if (!sidebar.style.display == "block") {
+//   body.style.overflowY = "hidden";
+// } else if (!sidebar.style.display == "none") {
+//   body.style.overflowY = "auto";
+// }

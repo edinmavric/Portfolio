@@ -82,6 +82,7 @@ body {
   width: 65%;
   height: 100%;
   font-size: 38px;
+  animation: sidebarSlide 1s ease 0s 1 normal forwards;
 }
 .btnsside {
   color: #ccd6f6;
@@ -585,6 +586,17 @@ video::-webkit-media-controls {
     opacity: 1;
     transform: scale(1);
   }
+}
+@keyframes sidebarSlide {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 /* Media queries for better responsivity */
