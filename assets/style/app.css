@@ -767,5 +767,13 @@ video::-webkit-media-controls {
     font-size: 21px;
     width: 40vw;
   }
+  .video-container {
+    display: none;
+    background-color: #0a192f;
+  }
+  .video-page::after {
+    display: none;
+    background-color: #0a192f;
+  }
   /*home page re-do */
 }

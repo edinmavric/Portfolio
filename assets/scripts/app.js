@@ -93,7 +93,6 @@ let btnsside = document.querySelectorAll(".btnsside");
 for (let i = 0; i < btnsside.length; i++) {
   btnsside[i].addEventListener("click", () => {
     setTimeout(() => {
-      console.log("headerHide");
       hideHeader.style.top = "-90px";
     }, 800);
   });
