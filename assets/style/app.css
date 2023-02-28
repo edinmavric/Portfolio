@@ -9,8 +9,7 @@ body {
   overflow-x: hidden;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  /* background-color: #0a192f; */
-  background-color: red;
+  background-color: #0a192f;
   cursor: default;
 }
 
