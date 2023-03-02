@@ -348,7 +348,6 @@ a.left:hover::after {
   width: 100%;
 }
 .my-pic img {
-  border: 1px solid #64ffda;
   border-radius: 8px;
   height: 330px;
   width: 280px;
