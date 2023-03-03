@@ -687,7 +687,7 @@ video::-webkit-media-controls {
   }
 }
 @media all and (max-width: 913px) {
-  .cursor {
+  .trail {
     display: none;
   }
 }
