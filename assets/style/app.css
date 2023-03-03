@@ -827,5 +827,10 @@ video::-webkit-media-controls {
     display: none;
     background-color: #0a192f;
   }
-  /*home page re-do */
+  .container {
+    margin: auto;
+  }
+  footer {
+    width: 105%;
+  }
 }
