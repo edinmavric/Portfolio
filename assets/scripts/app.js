@@ -125,33 +125,58 @@ window.onclick = function (event) {
 // } else if (!sidebar.style.display == "none") {
 //   body.style.overflowY = "auto";
 // }
-const cursor = document.querySelector('.cursor');
 
-let mouseX = 0;
-let mouseY = 0;
 
-let cursorX = 0;
-let cursorY = 0;
+   let dots = [],
+   mouse = {
+     x: 0,
+     y: 0
+   };
 
-let speed = 0.5; // change to increase the ease
+let Dot = function() {
+ this.x = 0;
+ this.y = 0;
+ this.node = (function(){
+   let n = document.createElement("div");
+   n.className = "trail";
+   document.body.appendChild(n);
+   return n;
+ }());
+};
+Dot.prototype.draw = function() {
+ this.node.style.left = this.x + "px";
+ this.node.style.top = this.y + "px";
+};
 
-function animate() {
-    let distX = mouseX - cursorX;
-    let distY = mouseY - cursorY;
-
-    cursorX = cursorX + (distX * speed);
-    cursorY = cursorY + (distY * speed);
-
-    cursor.style.left = cursorX + 'px';
-    cursor.style.top = cursorY + 'px';
-
-    requestAnimationFrame(animate);
+for (let i = 0; i < 12; i++) {
+ let d = new Dot();
+ dots.push(d);
 }
 
+function draw() {
+ let x = mouse.x,
+     y = mouse.y;
+ 
+ dots.forEach(function(dot, index, dots) {
+   let nextDot = dots[index + 1] || dots[0];
+   
+   dot.x = x;
+   dot.y = y;
+   dot.draw();
+   x += (nextDot.x - dot.x) * .6;
+   y += (nextDot.y - dot.y) * .6;
+
+ });
+}
+
+addEventListener("mousemove", function(event) {
+ mouse.x = event.pageX;
+ mouse.y = event.pageY;
+});
+
+function animate() {
+ draw();
+ requestAnimationFrame(animate);
+}
 
 animate();
-
-document.addEventListener('mousemove', (event) => {
-    mouseX = event.pageX;
-    mouseY = event.pageY;
-})

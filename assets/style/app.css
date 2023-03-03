@@ -9,19 +9,16 @@ body {
   overflow-x: hidden;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: #0a192f;
+  background-color: #0a192f;  
   cursor: default;
 }
-.cursor {
-  width: 32px;
-  height: 32px;
-  background: #b0ffed57;
-  border-radius: 50%;
+.trail {
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(-50%) translateY(-50%);
-  mix-blend-mode: difference;
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  background: #b0ffed57;
+  z-index: -1;
 }
 
 .active {
@@ -498,7 +495,7 @@ a.left:hover::after {
   border-radius: 6px;
   padding: 16px 20px;
   font-family: "Roboto Mono", monospace;
-  font-size: larger;
+  font-size: large;
   cursor: pointer;
 }
 #showMLBtn:hover {
@@ -549,6 +546,7 @@ a.left:hover::after {
   color: #64ffda;
   font-size: medium;
   cursor: pointer;
+  font-family: "Roboto Mono", monospace;
 }
 .contact-me-page a button:hover {
   transition: 0.5s;
