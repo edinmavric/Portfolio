@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: #0a192f;  
+  background-color: #0a192f;
   cursor: default;
 }
 .trail {
@@ -636,17 +636,17 @@ video::-webkit-media-controls {
   }
 }
 @keyframes myAnim {
-	0% {
-		transform: translateY(0);
-	}
+  0% {
+    transform: translateY(0);
+  }
 
-	50% {
-		transform: translateY(-12px);
-	}
-	
-	100% {
-		transform: translateY(0);
-	}
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Media queries for better responsivity */
@@ -657,6 +657,10 @@ video::-webkit-media-controls {
 }
 
 @media all and (max-width: 1180px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
   .parent {
     width: 90%;
   }
@@ -690,8 +694,16 @@ video::-webkit-media-controls {
   .trail {
     display: none;
   }
+  body,
+  html {
+    overflow-x: hidden;
+  }
 }
 @media all and (max-width: 862px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
   .about-me {
     display: flex;
     justify-content: center;
@@ -722,6 +734,10 @@ video::-webkit-media-controls {
   }
 }
 @media all and (max-width: 819px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
   header ul {
     display: none;
   }
@@ -738,6 +754,10 @@ video::-webkit-media-controls {
 }
 
 @media all and (max-width: 627px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
   .work-responsive-hide {
     display: flex;
     flex-direction: column;
