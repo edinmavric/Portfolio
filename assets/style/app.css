@@ -175,6 +175,7 @@ header ul li button {
   font-family: "Roboto Mono", monospace;
   font-size: medium;
   color: #64ffda;
+  cursor: pointer;
 }
 header ul li button:hover {
   transition: 0.5s;
@@ -276,6 +277,24 @@ i:hover {
 .mail-link h1 a:hover {
   color: #64ffda;
 }
+.mail-link a.left {
+  position: relative;
+}
+.mail-link a.left::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #64ffda;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.mail-link a.left:hover::after {
+  visibility: visible;
+  width: 100%;
+}
 
 /* about */
 .tree-about {
@@ -347,7 +366,7 @@ a.left:hover::after {
   border-radius: 8px;
   height: 330px;
   width: 280px;
-  animation: myAnim 4s ease-in-out 1s 1 normal forwards;
+  animation: pictureAnim 4s ease-in-out 1s 1 normal forwards;
 }
 
 /* work */
@@ -497,21 +516,22 @@ a.left:hover::after {
   font-family: "Roboto Mono", monospace;
   color: #8892b0;
 }
-.contact-me-page button {
+.contact-me-page a {
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+}
+.contact-me-page a button {
   background-color: #0a192f;
   border-color: #64ffda;
   border-radius: 6px;
   padding: 16px 20px;
-  font-family: "Roboto Mono", monospace;
+  color: #64ffda;
+  font-size: medium;
+  cursor: pointer;
 }
-.contact-me-page button:hover {
+.contact-me-page a button:hover {
   transition: 0.5s;
   background-color: #b0ffed20;
-}
-.contact-me-page button a {
-  text-decoration: none;
-  color: #64ffda;
-  font-size: larger;
 }
 
 /* left and right */
@@ -571,7 +591,7 @@ audio::-webkit-media-controls,
 video::-webkit-media-controls {
   display: none;
 }
-@keyframes myAnim {
+@keyframes pictureAnim {
   0% {
     opacity: 0.3;
     transform: scale(0.1);
