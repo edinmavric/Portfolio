@@ -206,6 +206,13 @@ header ul li button:hover {
   font-size: 52px;
   color: #e6f1ff;
   font-family: "Quicksand", sans-serif;
+  animation-duration: 1s;
+  transform-origin: top;
+}
+.bounce:hover {
+  animation-name: myAnim;
+  animation-timing-function: ease;
+  color: #64ffda;
 }
 .logo {
   display: flex;
@@ -249,9 +256,12 @@ i {
   color: #b1bcdb;
   padding: 12px;
   font-size: 24px;
+  transition: 0.5s;
 }
 i:hover {
   color: #64ffda;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .mail-link {
   display: flex;
@@ -615,6 +625,19 @@ video::-webkit-media-controls {
     opacity: 1;
     transform: translateX(0);
   }
+}
+@keyframes myAnim {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-12px);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
 }
 
 /* Media queries for better responsivity */
