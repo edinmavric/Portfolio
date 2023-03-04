@@ -700,8 +700,12 @@ video::-webkit-media-controls {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 220%;
+    width: 100%;
   }
+  .info {
+    width: 68%;
+    margin-top: 40px;
+}
   .my-pic {
     margin: 40px;
   }
@@ -835,6 +839,11 @@ video::-webkit-media-controls {
 @media all and (max-width: 525px) {
   .parent h2 {
     font-size: 48px;
+  }
+}
+@media all and (max-width: 370px) {
+  .parent h2 {
+    font-size: 42px;
   }
 }
 /* fix overflow-x broke header */
