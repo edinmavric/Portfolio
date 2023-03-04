@@ -12,10 +12,6 @@ body {
   background-color: #0a192f;
   cursor: default;
 }
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
 .trail {
   position: absolute;
   height: 6px;
@@ -51,7 +47,7 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: -5;
@@ -776,7 +772,7 @@ video::-webkit-media-controls {
     flex-direction: column;
     text-align: center;
     width: 90%;
-    padding: 40px;
+    padding: 40px 0;
   }
   .work-card-container-responsive span {
     text-decoration: underline #64ffda;
@@ -836,5 +832,9 @@ video::-webkit-media-controls {
     margin: auto;
   }
 }
-
+@media all and (max-width: 525px) {
+  .parent h2 {
+    font-size: 48px;
+  }
+}
 /* fix overflow-x broke header */
