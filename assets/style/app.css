@@ -12,6 +12,10 @@ body {
   background-color: #0a192f;
   cursor: default;
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .trail {
   position: absolute;
   height: 6px;
@@ -148,7 +152,7 @@ header {
   background-color: #0a192f;
   box-shadow: 1px 2px 10px #0a0a0a;
   z-index: 2;
-  width: 105%;
+  width: 100%;
 }
 #hide-header {
   transition: all 0.4s ease !important;
@@ -657,10 +661,7 @@ video::-webkit-media-controls {
 }
 
 @media all and (max-width: 1180px) {
-  body,
-  html {
-    overflow-x: hidden;
-  }
+  
   .parent {
     width: 90%;
   }
@@ -694,16 +695,10 @@ video::-webkit-media-controls {
   .trail {
     display: none;
   }
-  body,
-  html {
-    overflow-x: hidden;
-  }
+  
 }
 @media all and (max-width: 862px) {
-  body,
-  html {
-    overflow-x: hidden;
-  }
+  
   .about-me {
     display: flex;
     justify-content: center;
@@ -734,10 +729,7 @@ video::-webkit-media-controls {
   }
 }
 @media all and (max-width: 819px) {
-  body,
-  html {
-    overflow-x: hidden;
-  }
+  
   header ul {
     display: none;
   }
@@ -746,18 +738,11 @@ video::-webkit-media-controls {
     background-color: #0a192f;
     color: #64ffda;
     font-size: 42px;
-    margin-right: 30px;
-  }
-  .logo {
-    margin-left: 30px;
   }
 }
 
 @media all and (max-width: 627px) {
-  body,
-  html {
-    overflow-x: hidden;
-  }
+  
   .work-responsive-hide {
     display: flex;
     flex-direction: column;
@@ -850,7 +835,6 @@ video::-webkit-media-controls {
   .container {
     margin: auto;
   }
-  footer {
-    width: 105%;
-  }
 }
+
+/* fix overflow-x broke header */
