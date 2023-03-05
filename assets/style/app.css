@@ -650,6 +650,24 @@ video::-webkit-media-controls {
 }
 
 /* Media queries for better responsivity */
+@media all and (max-height: 437px) {
+  .cards span {
+    display: none;
+  }
+  .video-container {
+    display: none;
+  }
+  .video-page::after {
+    display: none;
+  }
+  header {
+    padding: 12px 0;
+  }
+  footer {
+    padding: 12px 0;
+  }
+}
+
 @media all and (max-width: 1330px) {
   .cards ul li {
     display: none;
@@ -657,7 +675,6 @@ video::-webkit-media-controls {
 }
 
 @media all and (max-width: 1180px) {
-  
   .parent {
     width: 90%;
   }
@@ -687,25 +704,13 @@ video::-webkit-media-controls {
     background-color: #051734;
   }
 }
+
 @media all and (max-width: 913px) {
   .trail {
     display: none;
   }
-  
-}
-@media all and (orientation: landscape) {
-  .cards span {
-    display: none;
-  }
-  .video-container {
-    display: none;
-  }
-  .video-page::after {
-    display: none;
-  }
 }
 @media all and (max-width: 862px) {
-  
   .about-me {
     display: flex;
     justify-content: center;
@@ -716,7 +721,7 @@ video::-webkit-media-controls {
   .info {
     width: 68%;
     margin-top: 40px;
-}
+  }
   .my-pic {
     margin: 40px;
   }
@@ -739,8 +744,8 @@ video::-webkit-media-controls {
     display: none;
   }
 }
+
 @media all and (max-width: 819px) {
-  
   header ul {
     display: none;
   }
@@ -759,7 +764,6 @@ video::-webkit-media-controls {
 }
 
 @media all and (max-width: 627px) {
-  
   .work-responsive-hide {
     display: flex;
     flex-direction: column;
@@ -853,14 +857,15 @@ video::-webkit-media-controls {
     margin: auto;
   }
 }
+
 @media all and (max-width: 525px) {
   .parent h2 {
     font-size: 48px;
   }
 }
+
 @media all and (max-width: 370px) {
   .parent h2 {
     font-size: 42px;
   }
 }
-/* fix overflow-x broke header */
