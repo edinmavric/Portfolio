@@ -474,15 +474,10 @@ a.left:hover::after {
 }
 .cards span {
   font-family: "Roboto Mono", monospace;
-  color: #b1bcdb;
   margin: 6px;
-}
-.cards span {
   list-style: none;
   text-align: left;
   padding-top: 30px;
-}
-.cards span {
   display: inline;
   padding: 5px;
   color: #8892b0;
@@ -698,12 +693,6 @@ video::-webkit-media-controls {
   }
   .contact-me-page a button {
     margin-bottom: 28px;
-  }
-}
-
-@media all and (max-width: 1330px) {
-  .cards ul li {
-    display: none;
   }
 }
 
