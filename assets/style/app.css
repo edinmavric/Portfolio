@@ -821,3 +821,8 @@ video::-webkit-media-controls {
     font-size: 42px;
   }
 }
+@media all and (max-width: 336px) {
+  .parent h1 {
+    font-size: 52px;
+  }
+}
