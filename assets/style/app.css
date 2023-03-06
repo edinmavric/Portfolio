@@ -388,24 +388,14 @@ a.left:hover::after {
 }
 
 /* work */
-.work-card-containter-width {
+.all-work {
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.work-card-container {
-  width: 82%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.work-card-container-responsive {
-  display: none;
-}
-.work-responsive-hide {
-  display: none;
+.all-work-width {
+  width: 80%;
 }
 .work-info {
   display: flex;
@@ -417,16 +407,40 @@ a.left:hover::after {
   color: #a8b2d1;
   font-family: "Roboto Mono", monospace;
 }
-.cards a {
+.card-containter-width {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-container a {
   text-decoration: none;
+  margin: 6px;
+}
+.font {
+  margin: 60px 0;
+  background-color: #0a192f;
+  color: #64ffda;
+  border-color: #64ffda;
+  border-radius: 6px;
+  padding: 16px 20px;
+  font-family: "Roboto Mono", monospace;
+  font-size: large;
+  cursor: pointer;
 }
 .cards {
-  width: 21%;
-  height: 38vh;
+  position: relative;
+  width: 260px;
+  height: 80%;
   display: flex;
   flex-direction: column;
   background-color: #112240;
-  margin: 9px;
+  margin: 30px 9px;
   padding: 30px;
   border-radius: 6px;
   cursor: pointer;
@@ -463,15 +477,25 @@ a.left:hover::after {
   color: #b1bcdb;
   margin: 6px;
 }
-.cards ul {
+.cards span {
   list-style: none;
   text-align: left;
   padding-top: 30px;
 }
-.cards ul li {
+.cards span {
   display: inline;
   padding: 5px;
   color: #8892b0;
+}
+.cards label {
+  font-family: "Roboto Mono", monospace;
+  color: #b1bcdb;
+  margin: 6px;
+}
+.technologies {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
 }
 .invisCards {
   width: 100%;
@@ -487,8 +511,14 @@ a.left:hover::after {
   flex-wrap: wrap;
   transition: 0.3s ease-out forwards;
 }
+.showMoreLess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+}
 #showMLBtn {
-  margin-top: 60px;
+  margin: 60px 0;
   background-color: #0a192f;
   color: #64ffda;
   border-color: #64ffda;
@@ -666,6 +696,9 @@ video::-webkit-media-controls {
   footer {
     padding: 12px 0;
   }
+  .contact-me-page a button {
+    margin-bottom: 28px;
+  }
 }
 
 @media all and (max-width: 1330px) {
@@ -726,19 +759,7 @@ video::-webkit-media-controls {
     margin: 40px;
   }
   .cards {
-    width: 30%;
-    height: 26vh;
-  }
-  .cards span {
-    display: none;
-  }
-  #showMLBtn {
-    display: none;
-  }
-  .invisible {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 220px;
   }
   #cardNo3 {
     display: none;
@@ -764,82 +785,8 @@ video::-webkit-media-controls {
 }
 
 @media all and (max-width: 627px) {
-  .work-responsive-hide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #cardNo7-responsive {
-    width: 30%;
-    height: 26vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #112240;
-    padding: 30px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: transform 0.2s;
-    margin-top: 50px;
-  }
-  #cardNo7-responsive a {
-    text-decoration: none;
-  }
-  #cardNo7-responsive h2 {
-    font-family: "Roboto Mono", monospace;
-    color: #e6f1ff;
-  }
-
-  .work-card-container-responsive {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: 90%;
-    padding: 40px 0;
-  }
-  .work-card-container-responsive span {
-    text-decoration: underline #64ffda;
-    font-family: "Roboto Mono", monospace;
-    font-size: large;
-  }
-  .work-card-container-responsive p {
-    color: #8892b0;
-    font-family: "Roboto Mono", monospace;
-    font-size: large;
-  }
-  .work-card-container {
-    display: none;
-  }
   .work-info h1 {
     width: 90%;
-  }
-  .work-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .work-button-responsive {
-    background-color: #0a192f;
-    border-color: #64ffda;
-    border-radius: 6px;
-    padding: 13px 16px;
-    font-family: "Roboto Mono", monospace;
-  }
-  .work-button-responsive:hover {
-    transition: 0.5s;
-    background-color: #b0ffed20;
-  }
-  .work-button-responsive a {
-    text-decoration: none;
-    font-size: larger;
-    color: #64ffda;
-    font-family: "Roboto Mono", monospace;
-  }
-  #showMLBtn {
-    display: none;
   }
   .modal-content a {
     font-size: 21px;
@@ -855,6 +802,11 @@ video::-webkit-media-controls {
   }
   .container {
     margin: auto;
+  }
+}
+@media all and (max-width: 776px) {
+  .cards {
+    width: fit-content;
   }
 }
 

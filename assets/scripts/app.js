@@ -74,6 +74,7 @@ let showBtn = document.getElementById("showMLBtn");
 let invisibleCards = document.querySelector(".invisCards");
 
 showBtn.addEventListener("click", () => {
+  showBtn.classList.add("font")
   if (invisibleCards.className === "invisCards invisible") {
     invisibleCards.className = "invisCards visible";
     showBtn.innerHTML = "Show Less...";
@@ -180,7 +181,7 @@ function animate() {
 animate();
 
 
-var docWidth = document.documentElement.offsetWidth;
+let docWidth = document.documentElement.offsetWidth;
 [].forEach.call(
   document.querySelectorAll('*'),
   function(el) {
