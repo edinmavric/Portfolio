@@ -153,6 +153,13 @@ header {
 #hide-header {
   transition: all 0.4s ease !important;
 }
+.logo a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 header ul {
   list-style: none;
   display: flex;
