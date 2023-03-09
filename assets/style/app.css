@@ -559,6 +559,33 @@ a.left:hover::after {
   display: none;
 }
 @media all and (max-width: 570px) {
+  .responsive-card-container-width {
+    display: flex;
+    flex-direction: column;
+  }
+  .dots-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  .dots {
+    background: #112240;
+    height: 6px;
+    width: 6px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 2px;
+  }
+  .dots.cards-active {
+    background: #64ffda;
+  }
+  .cardsRes.cards-active {
+    transform: scale(1.05);
+  }
+  .cardsRes.cards-active h2 {
+    color: #64ffda;
+  }
   .responsive-card-container {
     display: flex;
   }
