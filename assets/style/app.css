@@ -357,9 +357,28 @@ i:hover {
   color: #8892b0;
   padding: 12px;
 }
+.info ul li span.left {
+  position: relative;
+}
+.info ul li span::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #64ffda;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.info ul li span:hover::after {
+  visibility: visible;
+  width: 100%;
+}
 .info ul li {
   color: #64ffda;
   padding: 8px;
+  display: block;
 }
 .info label {
   text-decoration: underline #64ffda;
@@ -543,7 +562,7 @@ a.left:hover::after {
   .responsive-card-container {
     display: flex;
   }
-  ul {
+  .responsive-card-container-width ul {
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
   }
@@ -555,7 +574,7 @@ a.left:hover::after {
   .card-container-width {
     display: none;
   }
-  ul a {
+  .responsive-card-container-width ul a {
     text-decoration: none;
     margin: 6px;
   }
