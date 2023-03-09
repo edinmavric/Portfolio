@@ -597,30 +597,10 @@ a.left:hover::after {
     font-family: "Roboto Mono", monospace;
     color: #e6f1ff;
   }
-  .cardsRes span {
-    font-family: "Roboto Mono", monospace;
-    color: #b1bcdb;
-    margin: 6px;
-  }
-  .cardsRes span {
-    list-style: none;
-    text-align: left;
-    padding-top: 30px;
-  }
-  .cardsRes span {
-    display: inline;
-    padding: 5px;
-    color: #8892b0;
-  }
   .cardsRes label {
     font-family: "Roboto Mono", monospace;
     color: #b1bcdb;
     margin: 6px;
-  }
-  .technologies {
-    position: absolute;
-    bottom: 25px;
-    left: 25px;
   }
 }
 
