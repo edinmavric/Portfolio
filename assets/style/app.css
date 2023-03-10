@@ -563,7 +563,7 @@ a.left:hover::after {
     display: flex;
     flex-direction: column;
   }
-  .dots-container {
+  /* .dots-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -579,7 +579,7 @@ a.left:hover::after {
   }
   .dots.cards-active {
     background: #64ffda;
-  }
+  } */
   .cardsRes.cards-active {
     transform: scale(1.05);
   }
