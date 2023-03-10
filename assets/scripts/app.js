@@ -186,5 +186,3 @@ let docWidth = document.documentElement.offsetWidth;
     console.log(el);
   }
 });
-
-// scrollable cards
