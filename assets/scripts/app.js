@@ -187,27 +187,4 @@ let docWidth = document.documentElement.offsetWidth;
   }
 });
 
-//
-
-let cards = document.querySelectorAll(".cardsRes");
-let cardsDots = document.querySelectorAll(".dots");
-
-for (let i = 0; i < cards.length; i++) {
-  cards[i].addEventListener("click", function () {
-    for (let j = 0; j < cards.length; j++) {
-      cards[j].classList.remove("cards-active");
-      cardsDots[j].classList.remove("cards-active");
-    }
-    this.classList.add("cards-active");
-    cardsDots[i].classList.add("cards-active");
-  });
-
-  cardsDots[i].addEventListener("click", function () {
-    for (let j = 0; j < cards.length; j++) {
-      cards[j].classList.remove("cards-active");
-      cardsDots[j].classList.remove("cards-active");
-    }
-    cards[i].classList.add("cards-active");
-    this.classList.add("cards-active");
-  });
-}
+// scrollable cards
