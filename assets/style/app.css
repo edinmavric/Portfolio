@@ -159,7 +159,7 @@ header {
   top: 0;
   max-height: 12vh;
   background-color: #0a192f;
-  box-shadow: 1px 2px 10px #0a0a0a;
+  box-shadow: 1px 5px 10px #0a0a0a;
   z-index: 2;
   width: 100%;
 }
