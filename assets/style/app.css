@@ -137,6 +137,19 @@ body {
   cursor: pointer;
   border: none;
 }
+.progress-bar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #00003c;
+}
+.progress-bar-inner {
+  position: relative;
+  width: 0%;
+  padding: 0px;
+  background-color: #64ffda;
+}
 
 /* header */
 header {
@@ -558,70 +571,6 @@ a.left:hover::after {
 .responsive-card-container {
   display: none;
 }
-@media all and (max-width: 570px) {
-  .responsive-card-container {
-    display: flex;
-  }
-  .responsive-card-container-width ul {
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-  }
-  ul li {
-    display: inline;
-    scroll-snap-align: center;
-  }
-  .card-container,
-  .card-container-width {
-    display: none;
-  }
-  .responsive-card-container-width ul a {
-    text-decoration: none;
-    margin: 6px;
-  }
-  .cardsRes {
-    width: 12rem;
-    height: 17rem;
-    display: flex;
-    flex-direction: column;
-    background-color: #112240;
-    margin: 30px 9px;
-    padding: 30px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  .cardsRes:hover {
-    transform: scale(1.05);
-  }
-  .cardsRes:hover h2 {
-    color: #64ffda;
-  }
-  .card-icons .fa-github:hover {
-    color: #64ffda;
-  }
-  .card-icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .cardsRes .card-icons .fa-folder {
-    font-size: 4vh;
-    color: #64ffda;
-  }
-  .cardsRes .card-icons .fa-github {
-    font-size: 2.5vh;
-    color: #b1bcdb;
-  }
-  .cardsRes h2 {
-    font-family: "Roboto Mono", monospace;
-    color: #e6f1ff;
-  }
-  .cardsRes label {
-    font-family: "Roboto Mono", monospace;
-    color: #b1bcdb;
-    margin: 6px;
-  }
-}
 
 /* contact */
 .tree-contact {
@@ -872,7 +821,70 @@ video::-webkit-media-controls {
     background-color: #0a192f;
   }
 }
-
+@media all and (max-width: 570px) {
+  .responsive-card-container {
+    display: flex;
+  }
+  .responsive-card-container-width ul {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  ul li {
+    display: inline;
+    scroll-snap-align: center;
+  }
+  .card-container,
+  .card-container-width {
+    display: none;
+  }
+  .responsive-card-container-width ul a {
+    text-decoration: none;
+    margin: 6px;
+  }
+  .cardsRes {
+    width: 12rem;
+    height: 17rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #112240;
+    margin: 30px 9px;
+    padding: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .cardsRes:hover {
+    transform: scale(1.05);
+  }
+  .cardsRes:hover h2 {
+    color: #64ffda;
+  }
+  .card-icons .fa-github:hover {
+    color: #64ffda;
+  }
+  .card-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cardsRes .card-icons .fa-folder {
+    font-size: 4vh;
+    color: #64ffda;
+  }
+  .cardsRes .card-icons .fa-github {
+    font-size: 2.5vh;
+    color: #b1bcdb;
+  }
+  .cardsRes h2 {
+    font-family: "Roboto Mono", monospace;
+    color: #e6f1ff;
+  }
+  .cardsRes label {
+    font-family: "Roboto Mono", monospace;
+    color: #b1bcdb;
+    margin: 6px;
+  }
+}
 @media all and (max-width: 525px) {
   .parent h2 {
     font-size: 48px;
