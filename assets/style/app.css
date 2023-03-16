@@ -116,13 +116,13 @@ body {
 }
 .modal-content span {
   position: absolute;
-  top: 5px;
+  top: 14px;
   right: 80px;
 }
 .close {
   color: #64ffda;
   float: right;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
 }
 .close:hover,
@@ -461,8 +461,11 @@ a.left:hover::after {
   list-style-type: none;
 }
 .card-container a {
+  background: #112240;
   text-decoration: none;
-  margin: 6px;
+  margin: 10px;
+  padding: 32px 1px;
+  border-radius: 6px;
 }
 .font {
   margin: 60px 0;
@@ -481,17 +484,16 @@ a.left:hover::after {
   height: 80%;
   display: flex;
   flex-direction: column;
-  background-color: #112240;
-  margin: 12px;
   padding: 30px;
-  border-radius: 6px;
   cursor: pointer;
+  transform: scale(1.05);
   transition: transform 0.2s;
 }
-.cards:hover {
+.card-container a:hover {
   transform: scale(1.05);
+  transition: transform 0.2s;
 }
-.cards:hover h2 {
+.card-container a:hover h2 {
   color: #64ffda;
 }
 .card-icons .fa-github:hover {
@@ -522,6 +524,9 @@ a.left:hover::after {
   padding: 5px;
   color: #8892b0;
 }
+.cards:hover span {
+  color: #64ffdbb8;
+}
 .cards label {
   font-family: "Roboto Mono", monospace;
   color: #b1bcdb;
@@ -529,8 +534,8 @@ a.left:hover::after {
 }
 .technologies {
   position: absolute;
-  bottom: 20px;
   left: 25px;
+  bottom: 0;
   margin-top: 20px;
 }
 .invisCards {
@@ -776,6 +781,9 @@ video::-webkit-media-controls {
   #cardNo3 {
     display: none;
   }
+  .cardNo3resp {
+    display: none;
+  }
 }
 
 @media all and (max-width: 819px) {
@@ -801,6 +809,9 @@ video::-webkit-media-controls {
   .cards {
     width: fit-content;
     margin: 24px 0;
+  }
+  .technologies {
+    bottom: 22px;
   }
 }
 
