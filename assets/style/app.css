@@ -20,7 +20,9 @@ body {
   background: #b0ffed57;
   z-index: -1;
 }
-
+/* header ul li a:target {
+  color: #64ffda;
+} */
 .active {
   color: #64ffda;
 }
@@ -122,7 +124,7 @@ body {
 .close {
   color: #64ffda;
   float: right;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
 }
 .close:hover,
@@ -133,7 +135,6 @@ body {
 }
 .sidebar-open-btn {
   display: none;
-  font-size: 50px;
   cursor: pointer;
   border: none;
 }
@@ -796,7 +797,7 @@ video::-webkit-media-controls {
     align-items: center;
     background-color: #0a192f;
     color: #64ffda;
-    font-size: 42px;
+    font-size: 60px;
   }
   header ul li button {
     padding: 0;
