@@ -199,14 +199,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const elements = document.getElementsByClassName("bounce");
+// const elements = document.getElementsByClassName("bounce");
 
-for (let i = 0; i <= elements.length; i++) {
-  elements[i].addEventListener("animationend", function (e) {
-    elements[i].classList.remove("animated");
-  });
+// for (let i = 0; i <= elements.length; i++) {
+//   elements[i].addEventListener("animationend", function (e) {
+//     elements[i].classList.remove("animated");
+//   });
 
-  elements[i].addEventListener("mouseover", function (e) {
-    elements[i].classList.add("animated");
-  });
-}
+//   elements[i].addEventListener("mouseover", function (e) {
+//     elements[i].classList.add("animated");
+//   });
+// }
