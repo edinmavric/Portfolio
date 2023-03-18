@@ -117,12 +117,12 @@ body {
 .modal-content span {
   position: absolute;
   top: 14px;
-  right: 80px;
+  right: 90px;
 }
 .close {
   color: #64ffda;
   float: right;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
 }
 .close:hover,
@@ -133,7 +133,7 @@ body {
 }
 .sidebar-open-btn {
   display: none;
-  font-size: 1rem;
+  font-size: 50px;
   cursor: pointer;
   border: none;
 }
