@@ -24,22 +24,17 @@ let btns = navContainer.getElementsByClassName("btns");
 
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", () => {
+    let current = document.getElementsByClassName("active");
+
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+
+    this.className += " active";
     setTimeout(() => {
       hideHeader.style.top = "-90px";
     }, 800);
   });
-
-  for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", () => {
-      let current = document.getElementsByClassName("active");
-
-      if (current.length > 0) {
-        current[0].className = current[0].className.replace(" active", "");
-      }
-
-      this.className += " active";
-    });
-  }
 }
 
 // Preloader logic settings
@@ -119,13 +114,7 @@ window.onclick = function (event) {
   }
 };
 
-// Non scroll sidebar
-
-// if (!sidebar.style.display == "block") {
-//   body.style.overflowY = "hidden";
-// } else if (!sidebar.style.display == "none") {
-//   body.style.overflowY = "auto";
-// }
+// Mouse trailing effect
 
 let dots = [],
   mouse = {
@@ -198,15 +187,3 @@ document.addEventListener("DOMContentLoaded", function () {
     progressBarInner.style.width = percent + "%";
   });
 });
-
-// const elements = document.getElementsByClassName("bounce");
-
-// for (let i = 0; i <= elements.length; i++) {
-//   elements[i].addEventListener("animationend", function (e) {
-//     elements[i].classList.remove("animated");
-//   });
-
-//   elements[i].addEventListener("mouseover", function (e) {
-//     elements[i].classList.add("animated");
-//   });
-// }

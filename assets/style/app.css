@@ -20,9 +20,6 @@ body {
   background: #b0ffed57;
   z-index: -1;
 }
-/* header ul li a:target {
-  color: #64ffda;
-} */
 .active {
   color: #64ffda;
 }
@@ -210,6 +207,7 @@ header ul li button:hover {
   transition: 0.5s;
   background-color: #b0ffed20;
 }
+
 /* home */
 .tree {
   display: flex;
@@ -221,7 +219,6 @@ header ul li button:hover {
   justify-content: center;
   flex-direction: column;
   width: 50%;
-  /* margin-top: 7%; */
   font-family: "Roboto Mono", monospace;
 }
 .parent span {
@@ -627,7 +624,7 @@ a.left:hover::after {
   background-color: #b0ffed20;
 }
 
-/* left and right */
+/* left and right links */
 .mail-link {
   position: fixed;
   bottom: 260px;
@@ -639,7 +636,7 @@ a.left:hover::after {
   left: 50px;
 }
 
-/* bottom credits for site maker */
+/* bottom of the page*/
 .credits {
   display: flex;
   justify-content: center;
@@ -684,6 +681,7 @@ audio::-webkit-media-controls,
 video::-webkit-media-controls {
   display: none;
 }
+
 @keyframes pictureAnim {
   0% {
     opacity: 0.3;
@@ -759,7 +757,6 @@ video::-webkit-media-controls {
     background-color: #112240;
   }
 }
-
 @media all and (max-width: 913px) {
   .trail {
     display: none;
@@ -784,7 +781,6 @@ video::-webkit-media-controls {
     width: 220px;
   }
 }
-
 @media all and (max-width: 819px) {
   header ul {
     display: none;
@@ -813,7 +809,6 @@ video::-webkit-media-controls {
     bottom: 22px;
   }
 }
-
 @media all and (max-width: 627px) {
   .work-info h1 {
     width: 90%;
@@ -917,7 +912,6 @@ video::-webkit-media-controls {
     margin-bottom: 28px;
   }
 }
-
 @media all and (max-width: 370px) {
   .parent h2 {
     font-size: 42px;
