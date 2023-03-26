@@ -922,8 +922,3 @@ video::-webkit-media-controls {
     font-size: 52px;
   }
 }
-@media all and (max-width: 320px) {
-  .technologies {
-    display: none;
-  }
-}
