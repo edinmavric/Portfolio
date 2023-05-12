@@ -10,7 +10,7 @@ window.onscroll = headerMove = () => {
   if (prevScrollpos > currentScrollPos) {
     hideHeader.style.top = "0";
   } else {
-    hideHeader.style.top = "-90px";
+    hideHeader.style.top = "-100px";
   }
   prevScrollpos = currentScrollPos;
 };
