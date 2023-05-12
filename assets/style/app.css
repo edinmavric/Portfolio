@@ -140,7 +140,7 @@ body {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: #00003c;
+  background-color: #0a192f;
 }
 .progress-bar-inner {
   position: relative;
@@ -171,6 +171,9 @@ header {
   align-items: center;
   flex-direction: row;
 }
+.logo a h1 {
+  font-size: 350%;
+}
 header ul {
   list-style: none;
   display: flex;
@@ -185,6 +188,7 @@ header ul li a {
   color: #ccd6f6;
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
+  font-size: 120%;
 }
 header ul li a:hover {
   color: #64ffda;
@@ -261,7 +265,7 @@ header ul li button:hover {
   color: #8892b0;
   margin-top: 16px;
   font-family: "Roboto Mono", monospace;
-  font-weight: 100;
+  font-size: 120%;
 }
 .parent a button {
   color: #64ffda;
@@ -351,7 +355,7 @@ i:hover {
 .info p {
   color: #8892b0;
   font-family: "Roboto Mono", monospace;
-  font-size: large;
+  font-size: 130%;
 }
 .info h1 {
   color: #a8b2d1;
@@ -365,6 +369,7 @@ i:hover {
   list-style: "→";
 }
 .info ul li span {
+  font-size: 125%;
   color: #8892b0;
   padding: 12px;
 }
@@ -461,6 +466,8 @@ a.left:hover::after {
 .card-container a {
   background: #112240;
   text-decoration: none;
+  width: 30%;
+  height: 300px;
   margin: 10px;
   padding: 1px 1px 43px 1px;
   border-radius: 6px;
@@ -478,10 +485,10 @@ a.left:hover::after {
 }
 .cards {
   position: relative;
-  width: 260px;
-  height: 80%;
   display: flex;
   flex-direction: column;
+  height: fit-content;
+  width: fit-content;
   padding: 30px;
   cursor: pointer;
   transform: scale(1.05);
@@ -561,9 +568,9 @@ a.left:hover::after {
   color: #64ffda;
   border-color: #64ffda;
   border-radius: 6px;
-  padding: 16px 20px;
+  padding: 18px 22px;
   font-family: "Roboto Mono", monospace;
-  font-size: large;
+  font-size: larger;
   cursor: pointer;
 }
 #showMLBtn:hover {
@@ -593,6 +600,7 @@ a.left:hover::after {
   color: #64ffda;
   font-family: "Source Code Pro", monospace;
   margin: 0;
+  font-size: large;
 }
 .contact-me-page h1 {
   color: #e6f1ff;
@@ -601,7 +609,7 @@ a.left:hover::after {
   font-family: "Roboto Mono", monospace;
 }
 .contact-me-page p {
-  font-size: large;
+  font-size: larger;
   font-family: "Roboto Mono", monospace;
   color: #8892b0;
 }
@@ -613,9 +621,9 @@ a.left:hover::after {
   background-color: #0a192f;
   border-color: #64ffda;
   border-radius: 6px;
-  padding: 16px 20px;
+  padding: 18px 22px;
   color: #64ffda;
-  font-size: medium;
+  font-size: large;
   cursor: pointer;
   font-family: "Roboto Mono", monospace;
 }
@@ -646,7 +654,7 @@ a.left:hover::after {
 }
 .credits a {
   text-decoration: none;
-  font-size: medium;
+  font-size: large;
   color: #8892b0;
 }
 footer {
