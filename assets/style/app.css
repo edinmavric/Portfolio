@@ -52,7 +52,7 @@ body {
   z-index: -5;
 }
 .video-page::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -96,12 +96,12 @@ body {
 .btnsside {
   color: #ccd6f6;
   text-decoration: none;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   padding: 28px;
 }
 .modalbtn {
   color: #64ffda;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 38px;
 }
 .modal-content button:hover {
@@ -187,7 +187,7 @@ header ul li {
 header ul li a {
   color: #ccd6f6;
   text-decoration: none;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 120%;
 }
 header ul li a:hover {
@@ -195,14 +195,14 @@ header ul li a:hover {
 }
 header ul li span {
   color: #64ffda;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 header ul li button {
   background-color: #0a192f;
   border-color: #64ffda;
   border-radius: 6px;
   padding: 13px 16px;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: medium;
   color: #64ffda;
   cursor: pointer;
@@ -223,10 +223,10 @@ header ul li button:hover {
   justify-content: center;
   flex-direction: column;
   width: 50%;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 .parent span {
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Source Code Pro', monospace;
   color: #64ffda;
   float: left;
   margin: 0;
@@ -235,7 +235,7 @@ header ul li button:hover {
 .logo h1 {
   font-size: 52px;
   color: #e6f1ff;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   animation-duration: 1s;
   transform-origin: top;
 }
@@ -264,7 +264,7 @@ header ul li button:hover {
 .parent a {
   color: #8892b0;
   margin-top: 16px;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 120%;
 }
 .parent a button {
@@ -303,7 +303,7 @@ i:hover {
 .mail-link h1 {
   color: #b1bcdb;
   font-size: medium;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Source Code Pro', monospace;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
@@ -321,7 +321,7 @@ i:hover {
   position: relative;
 }
 .mail-link a.left::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 2px;
@@ -354,19 +354,19 @@ i:hover {
 }
 .info p {
   color: #8892b0;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 130%;
 }
 .info h1 {
   color: #a8b2d1;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 .info p a {
   color: #64ffda;
   text-decoration: none;
 }
 .info ul {
-  list-style: "→";
+  list-style: '→';
 }
 .info ul li span {
   font-size: 125%;
@@ -377,7 +377,7 @@ i:hover {
   position: relative;
 }
 .info ul li span::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 2px;
@@ -408,7 +408,7 @@ a.left {
   position: relative;
 }
 a.left::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 2px;
@@ -447,7 +447,7 @@ a.left:hover::after {
 }
 .work-info h1 {
   color: #a8b2d1;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 .card-containter-width {
   width: 100%;
@@ -479,7 +479,7 @@ a.left:hover::after {
   border-color: #64ffda;
   border-radius: 6px;
   padding: 16px 20px;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: large;
   cursor: pointer;
 }
@@ -518,11 +518,11 @@ a.left:hover::after {
   color: #b1bcdb;
 }
 .cards h2 {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   color: #e6f1ff;
 }
 .cards span {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   margin: 6px;
   text-align: left;
   display: inline;
@@ -533,7 +533,7 @@ a.left:hover::after {
   color: #64ffdbb8;
 }
 .cards label {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   color: #b1bcdb;
   margin: 6px;
 }
@@ -560,7 +560,7 @@ a.left:hover::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 #showMLBtn {
   margin: 60px 0;
@@ -569,7 +569,7 @@ a.left:hover::after {
   border-color: #64ffda;
   border-radius: 6px;
   padding: 18px 22px;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: larger;
   cursor: pointer;
 }
@@ -598,7 +598,7 @@ a.left:hover::after {
 }
 .contact-me-page span {
   color: #64ffda;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Source Code Pro', monospace;
   margin: 0;
   font-size: large;
 }
@@ -606,16 +606,16 @@ a.left:hover::after {
   color: #e6f1ff;
   font-size: 9vh;
   margin: 0;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 .contact-me-page p {
   font-size: larger;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   color: #8892b0;
 }
 .contact-me-page a {
   text-decoration: none;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 .contact-me-page a button {
   background-color: #0a192f;
@@ -625,7 +625,7 @@ a.left:hover::after {
   color: #64ffda;
   font-size: large;
   cursor: pointer;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 .contact-me-page a button:hover {
   transition: 0.5s;
@@ -889,11 +889,11 @@ video::-webkit-media-controls {
     color: #b1bcdb;
   }
   .cardsRes h2 {
-    font-family: "Roboto Mono", monospace;
+    font-family: 'Roboto Mono', monospace;
     color: #e6f1ff;
   }
   .cardsRes label {
-    font-family: "Roboto Mono", monospace;
+    font-family: 'Roboto Mono', monospace;
     color: #b1bcdb;
     margin: 6px;
   }
