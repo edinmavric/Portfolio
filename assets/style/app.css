@@ -424,8 +424,8 @@ a.left:hover::after {
 }
 .my-pic img {
   border-radius: 8px;
-  height: 330px;
-  width: 280px;
+  height: 500px;
+  width: 340px;
   animation: pictureAnim 4s ease-in-out 1s 1 normal forwards;
 }
 
