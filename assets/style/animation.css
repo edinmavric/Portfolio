@@ -1,0 +1,58 @@
+.reveal {
+  position: relative;
+  transform: translateY(130px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+audio::-webkit-media-controls-timeline,
+video::-webkit-media-controls-timeline {
+  display: none;
+}
+audio::-webkit-media-controls,
+video::-webkit-media-controls {
+  display: none;
+}
+
+@keyframes pictureAnim {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.1);
+  }
+  80% {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes sidebarSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes myAnim {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

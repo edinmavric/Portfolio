@@ -1,0 +1,194 @@
+@media all and (max-width: 1294px) {
+  .cardNo3resp {
+    display: none;
+  }
+}
+@media all and (max-width: 1180px) {
+  .parent {
+    width: 90%;
+  }
+  .icons-links,
+  .mail-link {
+    display: none;
+  }
+  .icons-links-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .credits {
+    display: none;
+  }
+  .credits-footer a {
+    text-decoration: none;
+    font-size: medium;
+    color: #8892b0;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20vh;
+    background-color: #112240;
+  }
+}
+@media all and (max-width: 1078px) {
+  .responsive-card-container {
+    display: flex;
+  }
+  .responsive-card-container-width ul {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  ul li {
+    display: inline;
+    scroll-snap-align: center;
+  }
+  .card-container,
+  .card-container-width {
+    display: none;
+  }
+  .responsive-card-container-width ul a {
+    text-decoration: none;
+    margin: 6px;
+  }
+  .cardsRes {
+    width: 16rem;
+    height: 19rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #112240;
+    margin: 30px 9px;
+    padding: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .cardsRes:hover {
+    transform: scale(1.05);
+  }
+  .cardsRes:hover h2 {
+    color: #64ffda;
+  }
+  .card-icons .fa-github:hover {
+    color: #64ffda;
+  }
+  .card-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cardsRes .card-icons .fa-folder {
+    font-size: 4vh;
+    color: #64ffda;
+  }
+  .cardsRes .card-icons .fa-github {
+    font-size: 2.5vh;
+    color: #b1bcdb;
+  }
+  .cardsRes h2 {
+    font-family: 'Roboto Mono', monospace;
+    color: #e6f1ff;
+  }
+  .cardsRes label {
+    font-family: 'Roboto Mono', monospace;
+    color: #b1bcdb;
+    margin: 6px;
+  }
+}
+@media all and (max-width: 913px) {
+  .trail {
+    display: none;
+  }
+}
+@media all and (max-width: 862px) {
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .info {
+    width: 68%;
+    margin-top: 40px;
+  }
+  .my-pic {
+    margin: 40px;
+  }
+}
+@media all and (max-width: 819px) {
+  header ul {
+    display: none;
+  }
+  .sidebar-open-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a192f;
+    color: #64ffda;
+    font-size: 60px;
+  }
+  header ul li button {
+    padding: 0;
+  }
+  header ul li {
+    padding: 0;
+  }
+}
+@media all and (max-width: 565px) {
+  .cardsRes {
+    width: 12rem;
+    height: 17rem;
+  }
+}
+@media all and (max-width: 627px) {
+  .work-info h1 {
+    width: 90%;
+  }
+  .modal-content a {
+    font-size: 21px;
+    width: 40vw;
+  }
+  .video-container {
+    display: none;
+    background-color: #0a192f;
+  }
+  .video-page::after {
+    display: none;
+    background-color: #0a192f;
+  }
+}
+@media all and (max-width: 525px) {
+  .parent h2 {
+    font-size: 48px;
+  }
+}
+@media all and (max-height: 437px) {
+  .video-container {
+    display: none;
+  }
+  .video-page::after {
+    display: none;
+  }
+  header {
+    padding: 12px 0;
+  }
+  footer {
+    padding: 12px 0;
+  }
+  .contact-me-page a button {
+    margin-bottom: 28px;
+  }
+}
+@media all and (max-width: 370px) {
+  .parent h2 {
+    font-size: 42px;
+  }
+}
+@media all and (max-width: 336px) {
+  .parent h1 {
+    font-size: 52px;
+  }
+}
