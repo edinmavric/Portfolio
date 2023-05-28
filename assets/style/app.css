@@ -765,76 +765,7 @@ video::-webkit-media-controls {
     background-color: #112240;
   }
 }
-@media all and (max-width: 913px) {
-  .trail {
-    display: none;
-  }
-}
-@media all and (max-width: 862px) {
-  .about-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-  }
-  .info {
-    width: 68%;
-    margin-top: 40px;
-  }
-  .my-pic {
-    margin: 40px;
-  }
-  .cards {
-    width: 220px;
-  }
-}
-@media all and (max-width: 819px) {
-  header ul {
-    display: none;
-  }
-  .sidebar-open-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0a192f;
-    color: #64ffda;
-    font-size: 60px;
-  }
-  header ul li button {
-    padding: 0;
-  }
-  header ul li {
-    padding: 0;
-  }
-}
-@media all and (max-width: 791px) {
-  .cards {
-    width: fit-content;
-    margin: 24px 0;
-  }
-  .technologies {
-    bottom: 22px;
-  }
-}
-@media all and (max-width: 627px) {
-  .work-info h1 {
-    width: 90%;
-  }
-  .modal-content a {
-    font-size: 21px;
-    width: 40vw;
-  }
-  .video-container {
-    display: none;
-    background-color: #0a192f;
-  }
-  .video-page::after {
-    display: none;
-    background-color: #0a192f;
-  }
-}
-@media all and (max-width: 570px) {
+@media all and (max-width: 1078px) {
   .responsive-card-container {
     display: flex;
   }
@@ -855,8 +786,8 @@ video::-webkit-media-controls {
     margin: 6px;
   }
   .cardsRes {
-    width: 12rem;
-    height: 17rem;
+    width: 16rem;
+    height: 19rem;
     display: flex;
     flex-direction: column;
     background-color: #112240;
@@ -896,6 +827,70 @@ video::-webkit-media-controls {
     font-family: 'Roboto Mono', monospace;
     color: #b1bcdb;
     margin: 6px;
+  }
+}
+
+@media all and (max-width: 913px) {
+  .trail {
+    display: none;
+  }
+}
+@media all and (max-width: 862px) {
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .info {
+    width: 68%;
+    margin-top: 40px;
+  }
+  .my-pic {
+    margin: 40px;
+  }
+}
+@media all and (max-width: 819px) {
+  header ul {
+    display: none;
+  }
+  .sidebar-open-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a192f;
+    color: #64ffda;
+    font-size: 60px;
+  }
+  header ul li button {
+    padding: 0;
+  }
+  header ul li {
+    padding: 0;
+  }
+}
+@media all and (max-width: 565px) {
+  .cardsRes {
+    width: 12rem;
+    height: 17rem;
+  }
+}
+@media all and (max-width: 627px) {
+  .work-info h1 {
+    width: 90%;
+  }
+  .modal-content a {
+    font-size: 21px;
+    width: 40vw;
+  }
+  .video-container {
+    display: none;
+    background-color: #0a192f;
+  }
+  .video-page::after {
+    display: none;
+    background-color: #0a192f;
   }
 }
 @media all and (max-width: 525px) {
